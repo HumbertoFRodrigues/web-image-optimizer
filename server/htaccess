@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME}.webp -f
+RewriteRule ^(.+)\.(jpe?g|png|gif)$ $1.$2.webp [T=image/webp,L]
+
+<FilesMatch "\.(jpe?g|png|gif)$">
+    Header append Vary Accept
+</FilesMatch>

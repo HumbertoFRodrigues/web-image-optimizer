@@ -1,0 +1,9 @@
+{
+  "name": "image-in-kb-node",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}
